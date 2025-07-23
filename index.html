@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTimer Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">⏱️ FitTimer</div>
+    <nav>
+      <ul>
+        <li><a href="#">🏠 Dashboard</a></li>
+        <li><a href="#">🏋️ Workouts</a></li>
+        <li><a href="#">📊 Progress</a></li>
+        <li><a href="#">⚙️ Settings</a></li>
+        <li><a href="#">📞 Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header class="topbar">
+      <div class="welcome">👋 Welcome Back, User!</div>
+      <div class="profile">🧑‍💻 Profile</div>
+    </header>
+
+    <section class="container">
+      <h1>🏋️ Interval Workout Timer</h1>
+      <div class="input-section">
+        <label>Work Time (sec)</label>
+        <input type="number" id="work" placeholder="30" min="1">
+        <label>Rest Time (sec)</label>
+        <input type="number" id="rest" placeholder="15" min="1">
+        <label>Rounds</label>
+        <input type="number" id="rounds" placeholder="5" min="1">
+      </div>
+
+      <div class="timer-display">
+        <div id="status">⏱️ Ready</div>
+        <div id="timer">00:00</div>
+        <div class="round">Round: 0</div>
+      </div>
+
+      <div class="buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <audio id="beep" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

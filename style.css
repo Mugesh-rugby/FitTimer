@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-right: 2px solid rgba(255,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  color: #ff5e62;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.topbar .welcome {
+  font-size: 1.2em;
+}
+
+.topbar .profile {
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.input-section label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Timer Display */
+.timer-display {
+  margin: 20px 0;
+}
+
+#timer {
+  font-size: 3em;
+  margin: 10px 0;
+  color: #ff5e62;
+}
+
+#status {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.round {
+  font-size: 1em;
+  color: #f0f0f0;
+}
+
+/* Buttons */
+.buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background: #ff5e62;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background: #ff3c3c;
+}
