@@ -28,7 +28,7 @@ FitTimer helps you manage your workouts with start, pause, reset functionality a
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/Muges h-rugby/FitTimer.git
+   git clone https://github.com/Mugesh-rugby/FitTimer.git
 
 📃 License
 This project is licensed under the MIT License.
